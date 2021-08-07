@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points",
+  "info": {
+    "name": "Point"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total": {
+      "default": "0",
+      "type": "biginteger"
+    },
+    "user_id": {
+      "via": "point_id",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
