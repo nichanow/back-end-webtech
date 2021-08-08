@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/points",
-      "handler": "point.find",
+      "path": "/users-data",
+      "handler": "users-data.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/points/count",
-      "handler": "point.count",
+      "path": "/users-data/count",
+      "handler": "users-data.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/points/:id",
-      "handler": "point.findOne",
+      "path": "/users-data/:id",
+      "handler": "users-data.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/points",
-      "handler": "point.create",
+      "path": "/users-data",
+      "handler": "users-data.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/points/:id",
-      "handler": "point.update",
+      "path": "/users-data/:id",
+      "handler": "users-data.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/points/:id",
-      "handler": "point.delete",
+      "path": "/users-data/:id",
+      "handler": "users-data.delete",
       "config": {
         "policies": []
       }

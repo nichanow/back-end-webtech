@@ -59,18 +59,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "name": {
-      "type": "string"
-    },
-    "age": {
-      "type": "string"
-    },
-    "gender": {
-      "type": "string"
-    },
-    "point_id": {
-      "model": "point",
-      "via": "user_id"
+    "user_data": {
+      "via": "username",
+      "model": "users-data"
     }
   }
 }

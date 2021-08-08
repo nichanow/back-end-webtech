@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/points-usage-history-tables",
+      "handler": "points-usage-history-table.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/points-usage-history-tables/count",
+      "handler": "points-usage-history-table.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/points-usage-history-tables/:id",
+      "handler": "points-usage-history-table.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/points-usage-history-tables",
+      "handler": "points-usage-history-table.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/points-usage-history-tables/:id",
+      "handler": "points-usage-history-table.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/points-usage-history-tables/:id",
+      "handler": "points-usage-history-table.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

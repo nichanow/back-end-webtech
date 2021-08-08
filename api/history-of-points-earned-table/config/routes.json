@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/history-of-points-earned-tables",
+      "handler": "history-of-points-earned-table.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/history-of-points-earned-tables/count",
+      "handler": "history-of-points-earned-table.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/history-of-points-earned-tables/:id",
+      "handler": "history-of-points-earned-table.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/history-of-points-earned-tables",
+      "handler": "history-of-points-earned-table.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/history-of-points-earned-tables/:id",
+      "handler": "history-of-points-earned-table.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/history-of-points-earned-tables/:id",
+      "handler": "history-of-points-earned-table.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

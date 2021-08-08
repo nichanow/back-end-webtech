@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points_usage_history_tables",
+  "info": {
+    "name": "Points usage history table",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "type": "string",
+      "private": false
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "points_usage": {
+      "default": 0,
+      "type": "integer"
+    },
+    "user": {
+      "via": "points_usage_history_tables",
+      "model": "users-data"
+    }
+  }
+}

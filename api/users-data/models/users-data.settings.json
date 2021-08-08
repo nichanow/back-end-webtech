@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_data",
+  "info": {
+    "name": "Users_data",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "points_usage_history_tables": {
+      "collection": "points-usage-history-table",
+      "via": "user"
+    },
+    "history_of_points_earned_tables": {
+      "via": "user",
+      "collection": "history-of-points-earned-table"
+    },
+    "username": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_data"
+    },
+    "total_points": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}
