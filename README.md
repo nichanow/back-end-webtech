@@ -15,4 +15,9 @@ username : nichathitra.m@ku.th, password: Strapi12345
 5. Users_data : เก็บ name, age, gender, total_points, check_date มี relation กับ username, history_of_points_earned_tables, points_usage_history_tables
 
 
+- รายชื่อสมาชิก กลุ่มที่ 4
+1. นาย ณัฐพล พรหมคีรี 6210406564
+2. นาย ดุลยวัต วิศิษฎ์เรืองฤทธิ์ 6210406572
+3. นางสาว ณิชธิตรา เมฆาพงศ์พันธุ์ 6210451179
+
 A quick description of your strapi application
