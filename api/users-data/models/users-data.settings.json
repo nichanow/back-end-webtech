@@ -21,9 +21,6 @@
     "gender": {
       "type": "string"
     },
-    "level": {
-      "type": "string"
-    },
     "points_usage_history_tables": {
       "collection": "points-usage-history-table",
       "via": "user"
@@ -40,6 +37,9 @@
     "total_points": {
       "default": 0,
       "type": "integer"
+    },
+    "check_date": {
+      "type": "date"
     }
   }
 }
